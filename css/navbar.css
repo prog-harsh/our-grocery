@@ -3,14 +3,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
 body {
-  font-family: sans-serif;
+  font-family: OpenSans;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(#141e30, #243b55);
+  background: linear-gradient(to bottom right,#141e30, #243b55);
   align-items: center;
 }
 .brand {
@@ -31,9 +35,8 @@ nav ul li a {
   font-size: 1.1rem;
   color: white;
   text-decoration: none;
-  padding: 25px;
+  padding: 20px;
   transition: 0.3s;
-  margin-left: 2rem;
 }
 nav ul li a:hover {
   background-color: white;
@@ -46,13 +49,17 @@ nav ul li a:hover {
 }
 .search-container button {
   float: right;
+  background-color: rgb(228, 228, 228); 
   padding: 10px;
   margin-left: 5px;
   margin-right: 16px;
-  background: #ddd;
   font-size: 17px;
+  transition: 0.3s;
   border: none;
   cursor: pointer;
+}
+.search-container .btn:hover {
+  background-color: rgb(190, 190, 190);
 }
 .show-btn,
 .hide-btn,
@@ -64,18 +71,17 @@ nav ul li a:hover {
   right: 10px;
   padding-right: 20px;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 983px) {
   .menu {
     position: fixed;
     top: 0;
     right: -100%;
     display: block;
-    width: 65%;
+    width: 55%;
     height: 100vh;
-    background-color: #141e30;
+    background: linear-gradient(to bottom right,#141e30, #243b55);
     text-align: center;
-    padding: 120px 0px;
-    line-height: normal;
+    padding: 120px 0px;  
     transition: 0.5s;
   }
   .show-btn {
@@ -83,10 +89,12 @@ nav ul li a:hover {
   }
   .menu li {
     display: block;
+    
   }
   .menu li a {
     display: block;
     margin-left: 0;
+    transition: 0.5s;
   }
   .menu li a:hover {
     color: white;
@@ -102,18 +110,19 @@ nav ul li a:hover {
     top: 15px;
   }
   .search-container{
-    display: inline-flex;
+    display: block;
     float: none;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
   }
-  .search-container button, .search-container input[type=text] {
+  .search-container .btn, .search-container input[type=text] {
     float: none;
+    margin: 5px 0px;
+    width: 90%;
+    padding: 10px;
+  }
+  .search-container input[type=text] {
     text-align: left;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 10px;
-    padding: 14px;
+  }
+  .search-container .btn{
+    align-items: center;
   }
 }
