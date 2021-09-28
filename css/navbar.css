@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+body {
+  font-family: OpenSans;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom right,#141e30, #243b55);
+  align-items: center;
+}
+.brand {
+  padding: 20px;
+  color: white;
+}
+.menu{
+  display: inline-flex;
+  align-items: center;
+}
+nav ul li {
+  display: inline-flex;
+  list-style: none;
+  justify-content: space-around;
+  margin-right: 5px;
+}
+nav ul li a {
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+.search-container input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+}
+.search-container button {
+  float: right;
+  background-color: rgb(228, 228, 228); 
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 16px;
+  font-size: 17px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+.search-container .btn:hover {
+  background-color: rgb(190, 190, 190);
+}
+.show-btn,
+.hide-btn,
+#check {
+  font-size: 30px;
+  color: white;
+  display: none;
+  position: absolute;
+  right: 10px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 983px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: block;
+    width: 55%;
+    height: 100vh;
+    background: linear-gradient(to bottom right,#141e30, #243b55);
+    text-align: center;
+    padding: 120px 0px;  
+    transition: 0.5s;
+  }
+  .show-btn {
+    display: block;
+  }
+  .menu li {
+    display: block;
+    
+  }
+  .menu li a {
+    display: block;
+    margin-left: 0;
+    transition: 0.5s;
+  }
+  .menu li a:hover {
+    color: white;
+    background-color: #243b55;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+  .hide-btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  .search-container{
+    display: block;
+    float: none;
+  }
+  .search-container .btn, .search-container input[type=text] {
+    float: none;
+    margin: 5px 0px;
+    width: 90%;
+    padding: 10px;
+  }
+  .search-container input[type=text] {
+    text-align: left;
+  }
+  .search-container .btn{
+    align-items: center;
+  }
+}
