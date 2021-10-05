@@ -1,9 +1,9 @@
 .footer-container {
     background: linear-gradient(to bottom right, #141e30, #243b55);
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: 30px;
     width: 100%;
     margin: auto 0;
 }
@@ -11,16 +11,26 @@
 footer {
     margin-top: auto;
 }
+.footer-container p{
+    color: white;
+}
 
-.footer-container p,
 .footer-container h3 {
     color: white;
     margin-bottom: 10px;
 }
 
+.links-container{
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .about {
     text-align: justify;
     width: 40%;
+    /* float: left; */
 }
 
 .footer-container a {
@@ -30,4 +40,32 @@ footer {
 
 .footer-container a :hover {
     color: yellow;
+}
+@media screen and (max-width:710px) {
+    .footer-container{
+        display: block;
+    }
+    .about{
+        width: 100%;
+    }
+    .links-container{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:510px) {
+    .footer-container{
+        display: block;
+    }
+    .about{
+        width: 100%;
+    }
+    .links-container{
+        display: block;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .quicklinks, .catergories, .contactus{
+        margin-bottom: 20px;
+    }
 }
