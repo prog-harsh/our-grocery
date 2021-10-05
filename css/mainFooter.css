@@ -1,0 +1,33 @@
+.footer-container {
+    background: linear-gradient(to bottom right, #141e30, #243b55);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    margin: auto 0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.footer-container p,
+.footer-container h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.about {
+    text-align: justify;
+    width: 40%;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container a :hover {
+    color: yellow;
+}
