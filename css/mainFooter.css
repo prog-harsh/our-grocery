@@ -34,6 +34,8 @@ footer {
 }
 
 .footer-container a {
+    display: block;
+    margin-bottom: 2px;
     text-decoration: none;
     color: white;
     transition: 0.3s;
@@ -41,7 +43,6 @@ footer {
 
 .footer-container a:hover {
     color: #3b80ff;
-    border-bottom: 1px solid #3371e4;
 }
 
 .copyright {
