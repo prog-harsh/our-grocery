@@ -46,6 +46,7 @@ nav ul li a {
     text-decoration: none;
     padding: 20px;
     transition: 0.3s;
+    clip-path: polygon(10% 10%, 100% 0, 100% 100%, 0 100%, 0 100%);
 }
 
 nav ul li a:hover {
