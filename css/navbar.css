@@ -99,6 +99,7 @@ nav ul li a:hover {
         text-align: center;
         padding: 120px 0px;
         transition: 0.5s;
+        z-index: 1;
     }
     .show-btn {
         display: block;

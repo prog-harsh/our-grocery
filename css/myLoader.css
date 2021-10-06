@@ -1,8 +1,8 @@
 #loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid blue;
-    border-bottom: 16px solid blue;
+    border-top: 16px solid #243b55;
+    border-bottom: 16px solid #243b55;
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
@@ -18,7 +18,8 @@
 }
 
 header,
-footer {
+footer,
+main {
     display: none;
 }
 
@@ -32,8 +33,8 @@ footer {
 
 @-webkit-keyframes animatebottom {
     from {
-        left: -10px;
-        opacity: 0
+        left: -15px;
+        opacity: 0.1
     }
     to {
         left: 0;
@@ -43,8 +44,8 @@ footer {
 
 @keyframes animatebottom {
     from {
-        left: -10px;
-        opacity: 0.2
+        left: -15px;
+        opacity: 0.1
     }
     to {
         left: 0;
