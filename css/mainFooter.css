@@ -36,6 +36,7 @@ footer {
 
 .footer-container a {
     display: block;
+    width: fit-content;
     margin-bottom: 2px;
     text-decoration: none;
     color: white;
