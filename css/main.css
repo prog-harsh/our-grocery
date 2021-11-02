@@ -29,6 +29,39 @@
     /* background-color: rgba(0, 0, 0, 0.287); */
 }
 
+.card-container .card img {
+    width: 230px;
+    height: 200px;
+}
+
+.card-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 0 15px grey;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    margin: 10px;
+    width: 250px;
+    height: auto;
+}
+
+.card button {
+    margin-top: 10px;
+    /* font-weight: bold; */
+    font-size: 16px;
+    color: white;
+    background-color: #141e30;
+    padding: 10px;
+    width: 90px;
+}
+
 @media screen and (max-width:1000px) {
     .top-left {
         width: 100%;

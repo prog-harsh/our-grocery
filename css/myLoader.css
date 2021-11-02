@@ -33,19 +33,19 @@ main {
 
 @-webkit-keyframes animatebottom {
     from {
-        left: -15px;
-        opacity: 0.1
+        left: -2px;
+        opacity: 0
     }
     to {
         left: 0;
-        opacity: 1
+        opacity: 0
     }
 }
 
 @keyframes animatebottom {
     from {
-        left: -15px;
-        opacity: 0.1
+        left: -20px;
+        opacity: 0
     }
     to {
         left: 0;

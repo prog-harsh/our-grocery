@@ -13,6 +13,7 @@ body {
     font-family: OpenSans;
     min-height: 100vh;
     display: flex;
+    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
     flex-direction: column;
 }
 
