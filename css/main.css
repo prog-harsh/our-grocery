@@ -1,3 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    font-family: OpenSans;
+    min-height: 100vh;
+    display: flex;
+    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
+    flex-direction: column;
+}
+
 @font-face {
     font-family: JosefinSans;
     src: url(../fonts/JosefinSans-Regular.ttf);
@@ -42,7 +61,7 @@
 }
 
 .card {
-    box-shadow: 0 0 15px grey;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     padding: 10px;
     white-space: nowrap;
     overflow: hidden;
@@ -57,9 +76,43 @@
     /* font-weight: bold; */
     font-size: 16px;
     color: white;
-    background-color: #141e30;
+    background-color: #243b55;
     padding: 10px;
     width: 90px;
+}
+
+.card button:hover {
+    background-color: #141e30;
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        left: -2px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 0
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        left: -20px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
 }
 
 @media screen and (max-width:1000px) {
