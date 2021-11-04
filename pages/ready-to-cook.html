@@ -2,21 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OurGrocery</title>
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/mainFooter.css">
-    <link rel="stylesheet" href="./css/myLoader.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainFooter.css">
+    <title>Document</title>
 </head>
 
-<body onload="myFunction()">
-    <div class="main-loader">
-        <div id="loader"></div>
-    </div>
+<body>
     <header id="home" class="animate-bottom">
         <!-- Navbar starts----->
         <nav>
@@ -28,10 +23,10 @@
                 <h2>OurGrocery</h2>
             </div>
             <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="./pages/about-us.html">ABOUT</a></li>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./about-us.html">ABOUT</a></li>
                 <li><a href="#">CATEGORIES</a></li>
-                <li><a href="./pages/contact-us.html" target="_blank">CONTACT</a></li>
+                <li><a href="./contact-us.html" target="_blank">CONTACT</a></li>
                 <div class="search-container">
                     <form action="#">
                         <input type="text" placeholder="Search.." name="s">
@@ -45,30 +40,20 @@
         </nav>
         <!-- Navbar ends -->
     </header>
-    <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_c_CXTT3023_460_1nov21.jpg" alt="" class="animate-bottom header-img">
-    <main>
-        <!-- Banner starts------->
-        <!-- <div class="image-container animate-bottom">
-            <div class="top-left">
-                <h1>We Provide Best Products</h1>
-                <h2 class="hide"> Which you will love forever</h2>
-            </div>
-            <img src="./images/1.jpeg" alt="image">
+    <img src="https://www.bigbasket.com/media/uploads/banner_images/L2-CXPL9656-1200x300-29thoct.jpg" class="animate-bottom" alt="">
+
+    <h2 class="animate-bottom" style="text-align: center; padding: 20px;">Ready to Cook</h2>
+    <section class="card-container animate-bottom">
+
+        <!-- <div class="card">
+            <img src="https://foodro.in/media/category//category-16160702352006.jpeg">
+            <h3>Daily Products</h3>
+            <h4>Price - Rs 130/-</h4>
+            <button>Buy</button>
         </div> -->
 
-        <!-- Banner ends------->
-        <h1 style="text-align: center;" class="animate-bottom">Products</h1>
-        <section class="card-container animate-bottom">
-            <!--             
-            <div class="card">
-                <img src="https://foodro.in/media/category//category-16160702352006.jpeg">
-                <h3>Daily Products</h3>
-                <h4>Price - Rs 130/-</h4>
-                <button>Buy</button>
-            </div> -->
+    </section>
 
-        </section>
-    </main>
     <!-- footer starts---- -->
     <footer>
         <div class="footer-container animate-bottom" id="home1">
@@ -83,7 +68,7 @@
                 <div class="catergories">
                     <h3>Catergories</h3>
 
-                    <a href="./pages/ready-to-cook.html">Ready to Cook</a>
+                    <a href="#">Ready to Cook</a>
                     <a href="#">Home Utility</a>
                     <a href="#">Soft Drinks</a>
                     <a href="#">Snacks</a>
@@ -94,9 +79,9 @@
                     <h3>Quick Links</h3>
                     <a href="#">Admin Login</a>
                     <a href="#">Top Offers</a>
-                    <a href="#">Home</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">About Us</a>
+                    <a href="../index.html">Home</a>
+                    <a href="./contact-us.html" target="_blank">Contact Us</a>
+                    <a href="./contact-us.html">About Us</a>
 
                 </div>
                 <div class="contactus">
@@ -111,9 +96,8 @@
         <div class="copyright">&copy; Copyright: OurGrocery</div>
     </footer>
     <!-- footer ends---- -->
-    <script src="./js/data.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/loader.js"></script>
+    <script src="../js/readyToCookData.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

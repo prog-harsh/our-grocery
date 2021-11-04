@@ -93,6 +93,13 @@ body {
     animation-duration: 1s;
 }
 
+.heading {
+    text-align: center;
+    padding: 30px;
+    margin: 5px;
+    background-color: #243b55;
+}
+
 @-webkit-keyframes animatebottom {
     from {
         left: -2px;

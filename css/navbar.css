@@ -1,22 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: OpenSans;
-    src: url(../fonts/OpenSans-Regular.ttf);
-}
-
-body {
-    font-family: OpenSans;
-    min-height: 100vh;
-    display: flex;
-    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-    flex-direction: column;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
