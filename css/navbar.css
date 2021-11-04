@@ -27,8 +27,9 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 20px;
+    border-radius: 5px;
     transition: 0.3s;
-    clip-path: polygon(10% 10%, 100% 0, 100% 100%, 0 100%, 0 100%);
+    /* clip-path: polygon(10% 10%, 100% 0, 100% 100%, 0 100%, 0 100%); */
 }
 
 nav ul li a:hover {
