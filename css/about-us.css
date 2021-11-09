@@ -1,0 +1,75 @@
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    transition: 500ms;
+    padding: 0 8px;
+}
+
+.card-about {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2px;
+}
+
+.about-section {
+    padding: 50px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #474e5d;
+    background-size: cover;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.about-section h1 {
+    font-weight: bolder;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.inner-cont {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 30px;
+}
+
+.container-about {
+    padding: 20px 16px;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+.container-about::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    padding: 80px;
+}
+
+.row img {
+    transition: 500ms
+}
+
+.row img:hover {
+    transform: scale(2);
+}
+
+.title {
+    color: grey;
+}
+
+.email {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}

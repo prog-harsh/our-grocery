@@ -17,40 +17,11 @@
     width: 100%;
 }
 
+.header-img,
 header,
 footer,
 main {
     display: none;
-}
-
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        left: -15px;
-        opacity: 0.1
-    }
-    to {
-        left: 0;
-        opacity: 1
-    }
-}
-
-@keyframes animatebottom {
-    from {
-        left: -15px;
-        opacity: 0.1
-    }
-    to {
-        left: 0;
-        opacity: 1
-    }
 }
 
 @-webkit-keyframes spin {
