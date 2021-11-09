@@ -43,6 +43,7 @@ body {
 .card-container .card img {
     width: 230px;
     height: 200px;
+    transition: 900ms;
 }
 
 .card-container {
@@ -53,15 +54,24 @@ body {
     width: 100%;
 }
 
+.card-container .card img:hover {
+    transform: scale(1.04);
+}
+
 .card {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
     padding: 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
+    transition: 400ms;
     margin: 10px;
     width: 250px;
     height: auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card button {
