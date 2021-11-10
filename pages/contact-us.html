@@ -3,12 +3,15 @@
 
 <head>
     <link rel="stylesheet" href="../css/contact-us.css">
+
 </head>
 
 <body>
+
     <h1>Kindy Contact us here! :)</h1>
     <div class="container">
-        <form action="action_page.php">
+
+        <form name="contact" onsubmit="return validateform()" action="../index.html">
 
             <label for="fname">Your Name</label>
             <input type="text" id="fname" name="your name" placeholder="Your name...">
@@ -27,7 +30,9 @@
             <input type="submit" value="Submit">
 
         </form>
+
     </div>
+    <script src="../js/contact-us.js"></script>
 </body>
 
 </html>
